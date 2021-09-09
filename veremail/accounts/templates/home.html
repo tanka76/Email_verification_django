@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+
+    {% block content %}
+
+
+    <div class="global-container">
+       
+            <h3 class="card-title text-center">Welcome, User {{request.user.username}}</h3>
+          
+           
+    </div>
+      
+                            
+                      
+                                <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                      
+    
+    
+
+    {% endblock %}
